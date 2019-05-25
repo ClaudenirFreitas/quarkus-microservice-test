@@ -1,0 +1,10 @@
+version: "3"
+services:
+  tad:
+    image: postgres:9.6
+    container_name: "postgres-tdcsp2019"
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=devtest
+    ports:
+      - 5432:5432
