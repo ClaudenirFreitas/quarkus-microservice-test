@@ -8,7 +8,9 @@
 </br><code>mvn clean compile quarkus:dev</code>
 
 3. running application (prod mode)
-</br><code>mvn clean install</code>
+3.1. generate jar
+<code>mvn clean install</code></br>
+3.2. running
 </br><code>java -jar target/quarkus-microservice-test-1.0.0-SNAPSHOT-runner.jar</code>
 
 <b>Run tests</b>
