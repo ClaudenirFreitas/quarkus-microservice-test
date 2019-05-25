@@ -11,13 +11,12 @@ public class PostgresContainerTest extends PostgreSQLContainer<PostgresContainer
 
 	public PostgresContainerTest() {
 		super("postgres:9.6");
-		withExposedPorts(POSTGRESQL_PORT);
 		withUsername("postgres");
 		withPassword("password");
 		withDatabaseName("devtest");
+		withExposedPorts(POSTGRESQL_PORT);
 		withCreateContainerCmdModifier(consumer ->
 			{
-
 				consumer.withName("tdcsp2019")
 				        .withHostName("tdcsp2019")
 						.withPortBindings(new PortBinding(bindPort(POSTGRESQL_PORT), new ExposedPort(POSTGRESQL_PORT)));
