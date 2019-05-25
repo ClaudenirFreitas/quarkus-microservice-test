@@ -7,7 +7,7 @@
 2. running application (dev mode)
 </br><code>mvn clean compile quarkus:dev</code>
 
-3. running application (prod mode)
+3. running application (prod mode)</br>
 3.1. generate jar
 <code>mvn clean install</code></br>
 3.2. running
