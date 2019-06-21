@@ -1,10 +1,29 @@
-version: "3"
+version: "3.7"
 services:
   tad:
     image: postgres:9.6
-    container_name: "postgres-tdcsp2019"
+    container_name: "postgres-tdc2019"
     environment:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=devtest
     ports:
       - 5432:5432
+    networks:
+      - tdc2019
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: "jenkins-tdc2019"
+    user: root
+    ports:
+      - 9090:8080
+      - 50000:50000
+    volumes:
+      - ~/tdc2019/jenkins_folder:/var/jenkins_home
+    networks:
+      - tdc2019
+  quarkus-microservice-test:
+    image: tdc2019/quarkus-microservice-test
+    networks:
+      - tdc2019
+networks:
+  tdc2019:

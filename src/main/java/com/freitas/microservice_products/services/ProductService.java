@@ -1,12 +1,11 @@
 package com.freitas.microservice_products.services;
 
-import java.util.Collection;
+import com.freitas.microservice_products.models.Product;
+import com.freitas.microservice_products.repository.ProductRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-
-import com.freitas.microservice_products.models.Product;
-import com.freitas.microservice_products.repository.ProductRepository;
+import java.util.Collection;
 
 @ApplicationScoped
 public class ProductService {
@@ -17,5 +16,4 @@ public class ProductService {
 	public Collection<Product> findAll() {
 		return repository.listAll();
 	}
-
 }
