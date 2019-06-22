@@ -5,7 +5,7 @@ import com.freitas.microservice_products.repository.ProductRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-import java.util.Collection;
+import java.util.List;
 
 @ApplicationScoped
 public class ProductService {
@@ -13,7 +13,7 @@ public class ProductService {
 	@Inject
 	ProductRepository repository;
 
-	public Collection<Product> findAll() {
+	public List<Product> findAll() {
 		return repository.listAll();
 	}
 }

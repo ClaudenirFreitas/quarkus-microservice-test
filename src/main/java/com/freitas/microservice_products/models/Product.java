@@ -1,12 +1,20 @@
 package com.freitas.microservice_products.models;
 
+import io.quarkus.hibernate.orm.panache.PanacheEntity;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
-
 @Entity(name = "T_PRODUCT")
 public class Product extends PanacheEntity {
+
+	public Product(String name, String description) {
+		this.name = name;
+		this.description = description;
+	}
+
+	public Product() {
+	}
 
 	@Column(name = "TXT_NAME")
 	private String name;
