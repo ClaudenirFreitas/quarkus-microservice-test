@@ -1,13 +1,13 @@
 package com.freitas.microservice_products.integration;
 
-import static com.freitas.microservice_products.util.Tests.INTEGRATION;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 import javax.servlet.http.HttpServletResponse;
 
 import org.flywaydb.core.Flyway;
-import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import com.freitas.microservice_products.containers.PostgresContainerTest;
@@ -16,18 +16,23 @@ import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.http.ContentType;
 
 @QuarkusTest
-@Tag(value = INTEGRATION)
-public class ProductResourceTest {
-	
-	private static final PostgresContainerTest DB = new PostgresContainerTest();
+public class ProductResourceIntegrationTest {
 
-	static {
-		DB.start();
+	private static final PostgresContainerTest CONTAINER = new PostgresContainerTest();
+
+	@BeforeAll
+	public static void init() {
+		CONTAINER.start();
 
 		Flyway.configure()
-		      .dataSource(DB.getJdbcUrl(), DB.getUsername(), DB.getPassword())
+		      .dataSource(CONTAINER.getJdbcUrl(), CONTAINER.getUsername(), CONTAINER.getPassword())
 		      .load()
-		      .migrate();
+			  .migrate();
+	}
+
+	@AfterAll
+	public static void teardown() {
+		CONTAINER.stop();
 	}
 
 	@Test
@@ -37,7 +42,7 @@ public class ProductResourceTest {
 				.get("/products")
 			.then()
 				.statusCode(HttpServletResponse.SC_OK)
-				.body("size()", equalTo(1))
+				.body("size()", equalTo(100))
 				.contentType(ContentType.JSON);
 	}
 

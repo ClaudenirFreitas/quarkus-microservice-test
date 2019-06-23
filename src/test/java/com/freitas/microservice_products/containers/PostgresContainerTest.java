@@ -18,7 +18,6 @@ public class PostgresContainerTest extends PostgreSQLContainer<PostgresContainer
 		withCreateContainerCmdModifier(consumer ->
 			{
 				consumer.withName("tdcsp2019")
-				        .withHostName("tdcsp2019")
 						.withPortBindings(new PortBinding(bindPort(POSTGRESQL_PORT), new ExposedPort(POSTGRESQL_PORT)));
 			});
 	}
