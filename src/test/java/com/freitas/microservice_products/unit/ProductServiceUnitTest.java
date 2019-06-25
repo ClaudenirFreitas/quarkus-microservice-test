@@ -6,7 +6,6 @@ import com.freitas.microservice_products.services.ProductService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.Tag;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -18,11 +17,9 @@ import javax.inject.Inject;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.freitas.microservice_products.util.Tests.UNIT;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-@Tag(value = UNIT)
 public class ProductServiceUnitTest {
 
     @Inject
