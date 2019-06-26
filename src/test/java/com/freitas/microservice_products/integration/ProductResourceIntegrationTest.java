@@ -10,7 +10,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import com.freitas.microservice_products.containers.PostgresContainerTest;
+import com.freitas.microservice_products.containers.MySqlContainerTest;
 
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.http.ContentType;
@@ -18,7 +18,7 @@ import io.restassured.http.ContentType;
 @QuarkusTest
 public class ProductResourceIntegrationTest {
 
-	private static final PostgresContainerTest CONTAINER = new PostgresContainerTest();
+	private static final MySqlContainerTest CONTAINER = new MySqlContainerTest();
 
 	@BeforeAll
 	public static void init() {

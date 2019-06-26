@@ -2,38 +2,28 @@ package com.freitas.microservice_products.models;
 
 import java.time.MonthDay;
 
-public class Signo {
-    private MonthDay inicio;
-    private MonthDay fim;
-    private String nome;
+public final class Signo {
 
-    public Signo(MonthDay inicio, MonthDay fim, String nome) {
-        this.inicio = inicio;
-        this.fim = fim;
-        this.nome = nome;
-    }
+	private final MonthDay inicio;
+	private final MonthDay fim;
+	private final String nome;
 
-    public MonthDay getInicio() {
-        return inicio;
-    }
+	public Signo(MonthDay inicio, MonthDay fim, String nome) {
+		this.inicio = inicio;
+		this.fim = fim;
+		this.nome = nome;
+	}
 
-    public void setInicio(MonthDay inicio) {
-        this.inicio = inicio;
-    }
+	public MonthDay getInicio() {
+		return inicio;
+	}
 
-    public MonthDay getFim() {
-        return fim;
-    }
+	public MonthDay getFim() {
+		return fim;
+	}
 
-    public void setFim(MonthDay fim) {
-        this.fim = fim;
-    }
+	public String getNome() {
+		return nome;
+	}
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 }

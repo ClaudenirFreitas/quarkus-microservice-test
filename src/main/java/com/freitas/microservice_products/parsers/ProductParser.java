@@ -6,11 +6,11 @@ import com.freitas.microservice_products.models.Product;
 public class ProductParser {
 
 	public static ProductDTO toDTO(final Product product) {
-		return new ProductDTO(product.getName(), product.getDescription());
+		return new ProductDTO(product.getId(), product.getName(), product.getDescription(), product.getPrice());
 	}
 
 	public static Product toModel(final ProductDTO productDTO) {
-		return new Product(productDTO.getName(), productDTO.getDescription());
+		return new Product(productDTO.getName(), productDTO.getDescription(), productDTO.getPrice());
 	}
 
 }

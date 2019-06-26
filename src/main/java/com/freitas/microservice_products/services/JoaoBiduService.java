@@ -15,9 +15,9 @@ public class JoaoBiduService {
 
         MonthDay birthDateMonthDay = MonthDay.from(birthDate);
 
-        return signDates.filter(sign ->
-                birthDateMonthDay.compareTo(sign.getInicio()) >= 0 && birthDateMonthDay.compareTo(sign.getFim()) <= 0
-        ).findFirst().orElseThrow(() -> new IllegalArgumentException("Eita!"));
+        return signDates.filter(sign -> birthDateMonthDay.compareTo(sign.getInicio()) >= 0 && birthDateMonthDay.compareTo(sign.getFim()) <= 0)
+        		        .findFirst()
+        		        .orElseThrow(() -> new IllegalArgumentException("Eita!"));
 
     }
 
@@ -36,4 +36,5 @@ public class JoaoBiduService {
             new Signo(MonthDay.of(Month.NOVEMBER, 22), MonthDay.of(Month.DECEMBER, 21), "Sagitário"),
             new Signo(MonthDay.of(Month.DECEMBER, 22), MonthDay.of(Month.DECEMBER, 31), "Capricórnio")
     );
+
 }

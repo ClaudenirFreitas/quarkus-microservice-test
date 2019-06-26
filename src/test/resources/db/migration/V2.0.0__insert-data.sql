@@ -1,100 +1,103 @@
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product001', 'description product 001');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product002', 'description product 002');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product003', 'description product 003');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product004', 'description product 004');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product005', 'description product 005');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product006', 'description product 006');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product007', 'description product 007');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product008', 'description product 008');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product009', 'description product 009');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product010', 'description product 010');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product011', 'description product 011');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product012', 'description product 012');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product013', 'description product 013');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product014', 'description product 014');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product015', 'description product 015');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product016', 'description product 016');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product017', 'description product 017');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product018', 'description product 018');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product019', 'description product 019');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product020', 'description product 020');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product021', 'description product 021');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product022', 'description product 022');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product023', 'description product 023');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product024', 'description product 024');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product025', 'description product 025');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product026', 'description product 026');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product027', 'description product 027');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product028', 'description product 028');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product029', 'description product 029');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product030', 'description product 030');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product031', 'description product 031');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product032', 'description product 032');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product033', 'description product 033');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product034', 'description product 034');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product035', 'description product 035');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product036', 'description product 036');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product037', 'description product 037');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product038', 'description product 038');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product039', 'description product 039');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product040', 'description product 040');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product041', 'description product 041');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product042', 'description product 042');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product043', 'description product 043');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product044', 'description product 044');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product045', 'description product 045');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product046', 'description product 046');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product047', 'description product 047');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product048', 'description product 048');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product049', 'description product 049');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product050', 'description product 050');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product051', 'description product 051');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product052', 'description product 052');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product053', 'description product 053');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product054', 'description product 054');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product055', 'description product 055');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product056', 'description product 056');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product057', 'description product 057');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product058', 'description product 058');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product059', 'description product 059');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product060', 'description product 060');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product061', 'description product 061');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product062', 'description product 062');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product063', 'description product 063');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product064', 'description product 064');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product065', 'description product 065');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product066', 'description product 066');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product067', 'description product 067');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product068', 'description product 068');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product069', 'description product 069');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product070', 'description product 070');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product071', 'description product 071');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product072', 'description product 072');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product073', 'description product 073');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product074', 'description product 074');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product075', 'description product 075');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product076', 'description product 076');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product077', 'description product 077');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product078', 'description product 078');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product079', 'description product 079');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product080', 'description product 080');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product081', 'description product 081');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product082', 'description product 082');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product083', 'description product 083');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product084', 'description product 084');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product085', 'description product 085');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product086', 'description product 086');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product087', 'description product 087');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product088', 'description product 088');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product089', 'description product 089');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product090', 'description product 090');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product091', 'description product 091');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product092', 'description product 092');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product093', 'description product 093');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product094', 'description product 094');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product095', 'description product 095');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product096', 'description product 096');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product097', 'description product 097');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product098', 'description product 098');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product099', 'description product 099');
-INSERT INTO T_PRODUCT(TXT_NAME, TXT_DESCRIPTION) VALUES ('product100', 'description product 100');
+INSERT INTO 
+	T_PRODUCT(TXT_NAME, TXT_DESCRIPTION, NUM_PRICE) 
+VALUES ('product1', 'description product 1', 542.93),
+       ('product2', 'description product 2', 126.19),
+       ('product3', 'description product 3', 803.31),
+       ('product4', 'description product 4', 973.72),
+       ('product5', 'description product 5', 348.94),
+       ('product6', 'description product 6', 301.83),
+       ('product7', 'description product 7', 439.00),
+       ('product8', 'description product 8', 31.60),
+       ('product9', 'description product 9', 284.37),
+       ('product10', 'description product 10', 527.66),
+       ('product11', 'description product 11', 882.54),
+       ('product12', 'description product 12', 327.91),
+       ('product13', 'description product 13', 952.74),
+       ('product14', 'description product 14', 145.96),
+       ('product15', 'description product 15', 802.42),
+       ('product16', 'description product 16', 222.26),
+       ('product17', 'description product 17', 587.85),
+       ('product18', 'description product 18', 359.85),
+       ('product19', 'description product 19', 411.33),
+       ('product20', 'description product 20', 887.84),
+       ('product21', 'description product 21', 865.64),
+       ('product22', 'description product 22', 25.30),
+       ('product23', 'description product 23', 566.54),
+       ('product24', 'description product 24', 95.27),
+       ('product25', 'description product 25', 161.22),
+       ('product26', 'description product 26', 775.81),
+       ('product27', 'description product 27', 227.22),
+       ('product28', 'description product 28', 815.84),
+       ('product29', 'description product 29', 383.95),
+       ('product30', 'description product 30', 221.28),
+       ('product31', 'description product 31', 705.35),
+       ('product32', 'description product 32', 81.65),
+       ('product33', 'description product 33', 40.48),
+       ('product34', 'description product 34', 499.65),
+       ('product35', 'description product 35', 698.05),
+       ('product36', 'description product 36', 380.47),
+       ('product37', 'description product 37', 155.80),
+       ('product38', 'description product 38', 618.80),
+       ('product39', 'description product 39', 284.33),
+       ('product40', 'description product 40', 626.30),
+       ('product41', 'description product 41', 978.59),
+       ('product42', 'description product 42', 260.20),
+       ('product43', 'description product 43', 3.27),
+       ('product44', 'description product 44', 290.28),
+       ('product45', 'description product 45', 425.68),
+       ('product46', 'description product 46', 737.33),
+       ('product47', 'description product 47', 428.99),
+       ('product48', 'description product 48', 218.84),
+       ('product49', 'description product 49', 951.17),
+       ('product50', 'description product 50', 500.70),
+       ('product51', 'description product 51', 45.75),
+       ('product52', 'description product 52', 323.69),
+       ('product53', 'description product 53', 596.56),
+       ('product54', 'description product 54', 407.71),
+       ('product55', 'description product 55', 621.07),
+       ('product56', 'description product 56', 435.51),
+       ('product57', 'description product 57', 851.21),
+       ('product58', 'description product 58', 293.17),
+       ('product59', 'description product 59', 42.48),
+       ('product60', 'description product 60', 136.29),
+       ('product61', 'description product 61', 466.48),
+       ('product62', 'description product 62', 222.27),
+       ('product63', 'description product 63', 564.04),
+       ('product64', 'description product 64', 855.84),
+       ('product65', 'description product 65', 559.27),
+       ('product66', 'description product 66', 965.18),
+       ('product67', 'description product 67', 346.62),
+       ('product68', 'description product 68', 19.22),
+       ('product69', 'description product 69', 166.61),
+       ('product70', 'description product 70', 347.59),
+       ('product71', 'description product 71', 767.30),
+       ('product72', 'description product 72', 301.82),
+       ('product73', 'description product 73', 395.58),
+       ('product74', 'description product 74', 962.92),
+       ('product75', 'description product 75', 796.29),
+       ('product76', 'description product 76', 427.17),
+       ('product77', 'description product 77', 938.17),
+       ('product78', 'description product 78', 24.07),
+       ('product79', 'description product 79', 971.86),
+       ('product80', 'description product 80', 363.18),
+       ('product81', 'description product 81', 223.63),
+       ('product82', 'description product 82', 715.25),
+       ('product83', 'description product 83', 124.98),
+       ('product84', 'description product 84', 670.64),
+       ('product85', 'description product 85', 21.36),
+       ('product86', 'description product 86', 142.66),
+       ('product87', 'description product 87', 408.86),
+       ('product88', 'description product 88', 757.11),
+       ('product89', 'description product 89', 441.11),
+       ('product90', 'description product 90', 913.72),
+       ('product91', 'description product 91', 247.80),
+       ('product92', 'description product 92', 731.99),
+       ('product93', 'description product 93', 674.32),
+       ('product94', 'description product 94', 215.94),
+       ('product95', 'description product 95', 340.11),
+       ('product96', 'description product 96', 206.69),
+       ('product97', 'description product 97', 515.83),
+       ('product98', 'description product 98', 49.62),
+       ('product99', 'description product 99', 556.60),
+       ('product100', 'description product 100', 202.11);
+       

@@ -40,9 +40,7 @@ public class ProductServiceUnitTest {
 
         // Given
         Mockito.when(repository.listAll())
-                .thenReturn(Arrays.asList(new Product(
-                        "IPhone XR"
-                )));
+               .thenReturn(Arrays.asList(new Product("IPhone XR")));
 
         // When
         List<Product> result = service.findAll();

@@ -1,4 +1,4 @@
-package com.freitas.microservice_products.unit.service;
+package com.freitas.microservice_products.unit;
 
 import com.freitas.microservice_products.models.Signo;
 import com.freitas.microservice_products.services.JoaoBiduService;
@@ -10,7 +10,7 @@ import java.time.Month;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class JoaoBiduServiceTest {
+public class JoaoBiduServiceUnitTest {
 
     @Test
     public void signoDeCancer() {

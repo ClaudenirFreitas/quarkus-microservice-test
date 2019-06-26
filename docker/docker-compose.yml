@@ -1,28 +1,13 @@
-version: "3.7"
+version: "3.6"
 services:
-  tad:
-    image: postgres:9.6
-    container_name: "postgres-tdcsp2019"
+  mysql:
+    image: mysql:5.7.22
+    container_name: "mysql-tdcsp2019"
     environment:
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=devtest
+      MYSQL_DATABASE: devtest
+      MYSQL_ROOT_PASSWORD: password
     ports:
-      - 5432:5432
-    networks:
-      - tdcsp2019
-  jenkins:
-    image: jenkins/jenkins:lts
-    container_name: "jenkins-tdcsp2019"
-    user: root
-    ports:
-      - 9090:8080
-      - 50000:50000
-    volumes:
-      - ~/tdcsp2019/jenkins_folder:/var/jenkins_home
-    networks:
-      - tdcsp2019
-  quarkus-microservice-test:
-    image: tdc2019/quarkus-microservice-test
+      - 3306:3306
     networks:
       - tdcsp2019
 networks:

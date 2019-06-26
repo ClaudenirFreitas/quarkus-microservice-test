@@ -14,12 +14,21 @@ public class Product extends PanacheEntity {
 	@Column(name = "TXT_DESCRIPTION")
 	private String description;
 
+	@Column(name = "NUM_PRICE")
+	private Double price;
+
 	public Product() {
 	}
 
-	public Product(String name, String description) {
+	public Product(Long id, String name, String description, Double price) {
+		this(name, description, price);
+		this.id = id;
+	}
+
+	public Product(String name, String description, Double price) {
 		this.name = name;
 		this.description = description;
+		this.price = price;
 	}
 
 	public Product(String name) {
@@ -48,6 +57,14 @@ public class Product extends PanacheEntity {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public Double getPrice() {
+		return price;
+	}
+
+	public void setPrice(Double price) {
+		this.price = price;
 	}
 
 }
