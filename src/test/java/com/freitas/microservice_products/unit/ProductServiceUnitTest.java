@@ -17,7 +17,8 @@ import javax.inject.Inject;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ProductServiceUnitTest {
@@ -36,18 +37,19 @@ public class ProductServiceUnitTest {
 
     @Test
     public void mockTest() {
+
+        // Given
         Mockito.when(repository.listAll())
                 .thenReturn(Arrays.asList(new Product(
-                        "iPhone",
-                        "iPhone XR 64GB Preto Tela 6.1” iOS 12 4G 12MP - Apple"
+                        "IPhone XR"
                 )));
 
+        // When
         List<Product> result = service.findAll();
 
-        verify(repository, atLeast(1)).listAll();
+        // Then
         verify(repository, times(1)).listAll();
-
         Assert.assertEquals(1, result.size());
-        Assert.assertEquals("iPhone", result.get(0).getName());
+        Assert.assertEquals("IPhone XR", result.get(0).getName());
     }
 }

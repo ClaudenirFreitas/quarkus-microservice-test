@@ -22,6 +22,10 @@ public class Product extends PanacheEntity {
 		this.description = description;
 	}
 
+	public Product(String name) {
+		this.name = name;
+	}
+
 	public Long getId() {
 		return id;
 	}

@@ -9,6 +9,18 @@ import java.util.Objects;
 import java.util.stream.Stream;
 
 public class JoaoBiduService {
+
+    public static Signo getSigno(LocalDate birthDate) {
+        Objects.requireNonNull(birthDate, "birthDate must not be null");
+
+        MonthDay birthDateMonthDay = MonthDay.from(birthDate);
+
+        return signDates.filter(sign ->
+                birthDateMonthDay.compareTo(sign.getInicio()) >= 0 && birthDateMonthDay.compareTo(sign.getFim()) <= 0
+        ).findFirst().orElseThrow(() -> new IllegalArgumentException("Eita!"));
+
+    }
+
     private static Stream<Signo> signDates = Stream.of(
             new Signo(MonthDay.of(Month.JANUARY, 1), MonthDay.of(Month.JANUARY, 19), "Capricórnio"),
             new Signo(MonthDay.of(Month.JANUARY, 20), MonthDay.of(Month.FEBRUARY, 18), "Aquário"),
@@ -24,15 +36,4 @@ public class JoaoBiduService {
             new Signo(MonthDay.of(Month.NOVEMBER, 22), MonthDay.of(Month.DECEMBER, 21), "Sagitário"),
             new Signo(MonthDay.of(Month.DECEMBER, 22), MonthDay.of(Month.DECEMBER, 31), "Capricórnio")
     );
-
-    public static Signo getSigno(LocalDate birthDate) {
-        Objects.requireNonNull(birthDate, "birthDate must not be null");
-
-        MonthDay birthDateMonthDay = MonthDay.from(birthDate);
-
-        return signDates.filter(sign ->
-                birthDateMonthDay.compareTo(sign.getInicio()) >= 0 && birthDateMonthDay.compareTo(sign.getFim()) <= 0
-        ).findFirst().orElseThrow(() -> new IllegalArgumentException("Eita!"));
-
-    }
 }
