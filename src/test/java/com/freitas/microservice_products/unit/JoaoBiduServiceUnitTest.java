@@ -20,7 +20,7 @@ public class JoaoBiduServiceUnitTest {
     }
 
     @Test
-    public void signoDeJegue() {
+    public void signoInvalido() {
         NullPointerException thrown =
                 assertThrows(NullPointerException.class,
                         () -> JoaoBiduService.getSigno(null),
