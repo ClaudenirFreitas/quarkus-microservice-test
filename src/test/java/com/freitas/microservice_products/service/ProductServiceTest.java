@@ -1,4 +1,4 @@
-package com.freitas.microservice_products.unit;
+package com.freitas.microservice_products.service;
 
 import com.freitas.microservice_products.models.Product;
 import com.freitas.microservice_products.repository.ProductRepository;
@@ -21,7 +21,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
-public class ProductServiceUnitTest {
+public class ProductServiceTest {
 
     @Inject
     @InjectMocks
@@ -50,4 +50,5 @@ public class ProductServiceUnitTest {
         Assert.assertEquals(1, result.size());
         Assert.assertEquals("IPhone XR", result.get(0).getName());
     }
+
 }
