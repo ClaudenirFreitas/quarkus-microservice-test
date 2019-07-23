@@ -35,7 +35,6 @@ public class ProductResourceIntegrationTest {
 		CONTAINER.stop();
 	}
 
-	// TODO: This test will fail until https://github.com/quarkusio/quarkus/issues/1724 has been resolved.
 	@Test
 	public void testGetSuccess() {
 		given()

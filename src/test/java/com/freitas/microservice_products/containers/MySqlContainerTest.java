@@ -10,7 +10,6 @@ import com.github.dockerjava.api.model.PortBinding;
 public class MySqlContainerTest extends MySQLContainer<MySqlContainerTest> {
 
 	public MySqlContainerTest() {
-		super("mysql:5.7.22");
 		withUsername("user");
 		withPassword("password");
 		withDatabaseName("devtest");

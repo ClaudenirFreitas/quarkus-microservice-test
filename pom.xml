@@ -18,7 +18,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<quarkus.version>0.19.1</quarkus.version>
+		<quarkus.version>0.17.0</quarkus.version>
 		<mysql-connector.version>8.0.16</mysql-connector.version>
 		<surefire-plugin.version>3.0.0-M3</surefire-plugin.version>
 
