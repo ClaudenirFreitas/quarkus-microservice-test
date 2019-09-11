@@ -13,4 +13,8 @@ public class ProductParser {
 		return new Product(productDTO.getName(), productDTO.getDescription(), productDTO.getPrice());
 	}
 
+	public static Product toModel(final ProductDTO productDTO, final Long productId) {
+		return new Product(productId, productDTO.getName(), productDTO.getDescription(), productDTO.getPrice());
+	}
+
 }
