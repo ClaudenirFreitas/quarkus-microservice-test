@@ -9,7 +9,6 @@ import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
-import javax.ws.rs.PATCH;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -33,7 +32,8 @@ public class ProductResource {
 	public Response create(ProductDTO productDTO) {
 		Product product = ProductParser.toModel(productDTO);
 		service.save(product);
-		return Response.created(URI.create("/products/" + product.getId())).build();
+		return Response.created(URI.create("/products/" + product.getId()))
+				       .build();
 	}
 
 	@GET
@@ -55,19 +55,20 @@ public class ProductResource {
 	}
 
 	@PUT
-	@Path("/{productId}")
+	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response update(@PathParam("productId") Long productId, ProductDTO productDTO) {
-		Product product = ProductParser.toModel(productDTO, productId);
+	public Response update(@PathParam("id") Long id, ProductDTO productDTO) {
+		Product product = ProductParser.toModel(productDTO, id);
 		service.update(product);
 		return Response.ok().build();
 	}
 
 	@DELETE
-	@Path("/{productId}")
+	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response delete(@PathParam("productId") Long productId) {
-		service.delete(productId);
+	public Response delete(@PathParam("id") Long id) {
+		service.delete(id);
 		return Response.noContent().build();
 	}
+
 }

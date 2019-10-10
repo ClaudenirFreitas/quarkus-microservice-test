@@ -36,7 +36,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void mockTest() {
+    public void findAllTest() {
 
         // Given
         Mockito.when(repository.listAll())

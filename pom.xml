@@ -18,12 +18,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<quarkus.version>0.17.0</quarkus.version>
+		<quarkus.version>0.23.2</quarkus.version>
 		<mysql-connector.version>8.0.16</mysql-connector.version>
 		<surefire-plugin.version>3.0.0-M3</surefire-plugin.version>
 
 		<!-- tests -->
-		<testcontainers.version>1.11.4</testcontainers.version>
+		<testcontainers.version>1.12.2</testcontainers.version>
 		<mockito-core.version>2.28.2</mockito-core.version>
 		<junit.platform.version>1.5.0-RC2</junit.platform.version>
 	</properties>
