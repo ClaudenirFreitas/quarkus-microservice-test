@@ -78,8 +78,8 @@ public class ProductResourceIntegrationTest {
 
 		// clear data
 		String[] splitLocation = headerLocation.split("/");
-		String locationId = splitLocation[splitLocation.length - 1];
-		service.delete(Long.valueOf(locationId));
+		String productId = splitLocation[splitLocation.length - 1];
+		service.delete(Long.valueOf(productId));
 		
 	}
 
@@ -110,8 +110,8 @@ public class ProductResourceIntegrationTest {
 	public void testDeleteSuccess() {
 		
 		ProductDTO product = new ProductDTO();
-		product.setName("test product 1");
-		product.setDescription("description product 1");
+		product.setName("test product to delete");
+		product.setDescription("description product to delete");
 		product.setPrice(10D);
 		
 		String headerLocation = given()
@@ -126,11 +126,11 @@ public class ProductResourceIntegrationTest {
 
 		// clear data
 		String[] splitLocation = headerLocation.split("/");
-		String locationId = splitLocation[splitLocation.length - 1];
+		String productId = splitLocation[splitLocation.length - 1];
 		
 		given()
 		.when()
-			.delete("/products/" + locationId)
+			.delete("/products/" + productId)
 		.then()
 			.statusCode(HttpServletResponse.SC_NO_CONTENT);
 			
