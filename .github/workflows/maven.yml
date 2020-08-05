@@ -23,4 +23,4 @@ jobs:
     - name: Build with Maven
       run: |
         mvn -B package -DskipTests --file pom.xml
-        echo $dockerhub
+        echo "test: ${{ secrets.DOCKERHUB }}"
