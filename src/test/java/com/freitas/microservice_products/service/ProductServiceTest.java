@@ -1,8 +1,13 @@
 package com.freitas.microservice_products.service;
 
-import com.freitas.microservice_products.models.Product;
-import com.freitas.microservice_products.repository.ProductRepository;
-import com.freitas.microservice_products.services.ProductService;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+
+import java.util.Arrays;
+import java.util.List;
+
+import javax.inject.Inject;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,12 +18,9 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import javax.inject.Inject;
-import java.util.Arrays;
-import java.util.List;
-
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import com.freitas.microservice_products.models.Product;
+import com.freitas.microservice_products.repository.ProductRepository;
+import com.freitas.microservice_products.services.ProductService;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ProductServiceTest {
@@ -32,7 +34,7 @@ public class ProductServiceTest {
 
     @Before
     public void init() {
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.openMocks(this);
     }
 
     @Test

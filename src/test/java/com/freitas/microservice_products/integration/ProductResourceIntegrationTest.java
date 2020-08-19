@@ -5,8 +5,8 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 import javax.inject.Inject;
-import javax.servlet.http.HttpServletResponse;
 
+import org.apache.http.HttpStatus;
 import org.jboss.resteasy.util.HttpHeaderNames;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
@@ -34,7 +34,7 @@ public class ProductResourceIntegrationTest {
 		.when()
 			.get("/products")
 		.then()
-			.statusCode(HttpServletResponse.SC_OK)
+			.statusCode(HttpStatus.SC_OK)
 			.body("size()", equalTo(100))
 			.contentType(ContentType.JSON);
 	}
@@ -53,7 +53,7 @@ public class ProductResourceIntegrationTest {
 								.when()
 									.post("/products")
 								.then()
-									.statusCode(HttpServletResponse.SC_CREATED)
+									.statusCode(HttpStatus.SC_CREATED)
 									.header(HttpHeaderNames.LOCATION, containsString("products/"))
 									.extract()
 									.header(HttpHeaderNames.LOCATION);
@@ -74,12 +74,13 @@ public class ProductResourceIntegrationTest {
 		product.setPrice(1000D);
 		
 		given()
+		    .pathParam("id", 50)
 			.contentType(ContentType.JSON)
 			.body(product)
 		.when()
-			.put("/products/50")
+			.put("/products/{id}")
 		.then()
-			.statusCode(HttpServletResponse.SC_OK);
+			.statusCode(HttpStatus.SC_OK);
 
 		Product updated = service.find(50L);
 		Assert.assertEquals("update name 1", updated.getName());
@@ -102,7 +103,7 @@ public class ProductResourceIntegrationTest {
 								.when()
 									.post("/products")
 								.then()
-									.statusCode(HttpServletResponse.SC_CREATED)
+									.statusCode(HttpStatus.SC_CREATED)
 									.extract()
 									.header(HttpHeaderNames.LOCATION);
 
@@ -111,10 +112,11 @@ public class ProductResourceIntegrationTest {
 		String productId = splitLocation[splitLocation.length - 1];
 		
 		given()
+		    .pathParam("id", productId)
 		.when()
-			.delete("/products/" + productId)
+			.delete("/products/{id}")
 		.then()
-			.statusCode(HttpServletResponse.SC_NO_CONTENT);
+			.statusCode(HttpStatus.SC_NO_CONTENT);
 			
 	}
 

@@ -8,7 +8,7 @@ import org.testcontainers.containers.MySQLContainer;
 
 import io.quarkus.test.common.QuarkusTestResourceLifecycleManager;
 
-public class DatabaseConfig implements QuarkusTestResourceLifecycleManager {
+public final class DatabaseConfig implements QuarkusTestResourceLifecycleManager {
 
 	private static final MySQLContainer<?> CONTAINER = new MySQLContainer<>();
 
