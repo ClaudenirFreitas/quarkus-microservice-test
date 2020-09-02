@@ -32,5 +32,5 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         registry: https://docker.pkg.github.com/
+        repository: claudenirfreitas  
         name: quarkus-microservice-test
-        tags: '1.0.0'
