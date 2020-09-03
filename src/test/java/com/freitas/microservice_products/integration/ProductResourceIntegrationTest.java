@@ -22,7 +22,7 @@ import io.restassured.http.ContentType;
 
 @QuarkusTest
 @QuarkusTestResource(value = DatabaseConfig.class)
-public class ProductResourceIntegrationTest {
+class ProductResourceIntegrationTest {
 
 	@Inject
 	ProductService service;
