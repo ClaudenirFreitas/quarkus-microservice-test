@@ -40,5 +40,5 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ github.token }}
         registry: docker.pkg.github.com
-        repository: claudenirfreitas/quarkus-microservice-test
+        repository: claudenirfreitas/quarkus-microservice-test/quarkus-test
         tag_with_ref: true 
