@@ -34,6 +34,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      with:
+        args: >
+          -Dsonar.organization=claudenirfreitas
+          -Dsonar.projectKey=quarkus-microservice-test
 
     - name: Build with Maven
       run: |
