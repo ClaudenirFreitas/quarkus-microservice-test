@@ -33,6 +33,7 @@ jobs:
       run: |
         mvn -B package -DskipTests --file pom.xml
         cp target/quarkus-microservice-test-1.0.0-SNAPSHOT-runner.jar docker/app.jar
+        docker --version
 
     - name: Build and push Docker images
       uses: docker/build-push-action@v1.1.0
