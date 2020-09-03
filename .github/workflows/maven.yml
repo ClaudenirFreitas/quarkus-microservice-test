@@ -28,12 +28,17 @@ jobs:
         path: ~/.m2
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
+    
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
     - name: Build with Maven
       run: |
         mvn -B package --file pom.xml
         cp target/quarkus-microservice-test-1.0.0-SNAPSHOT-runner.jar docker/app.jar
-        docker --version
 
     - name: Build and push Docker images
       uses: docker/build-push-action@v1.1.0
