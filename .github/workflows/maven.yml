@@ -38,6 +38,7 @@ jobs:
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.organization=claudenirfreitas \
           -Dsonar.projectKey=quarkus-microservice-test \
+          -Dsonar.java.coveragePlugin=cobertura \           
           sonar:sonar
         cp target/quarkus-microservice-test-1.0.0-SNAPSHOT-runner.jar docker/app.jar
 
