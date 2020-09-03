@@ -20,11 +20,7 @@ public class ProductService {
 	}
 
 	public Product find(Long id) {
-		Product product = repository.findById(id);
-		if (product == null) {
-			throw new IllegalArgumentException("Product not found!");
-		}
-		return product;
+		return getProduct(id);
 	}
 
 	@Transactional
@@ -34,10 +30,7 @@ public class ProductService {
 
 	@Transactional
 	public void update(Product product) {
-		Product productDB = repository.findById(product.getId());
-		if (productDB == null) {
-			throw new IllegalArgumentException("Product not found!");
-		}
+		Product productDB = getProduct(product.getId());
 
 		productDB.setName(product.getName());
 		productDB.setDescription(product.getDescription());
@@ -47,12 +40,13 @@ public class ProductService {
 
 	@Transactional
 	public void delete(Long id) {
-		Product product = repository.findById(id);
-		if (product == null) {
-			throw new IllegalArgumentException("Product not found!");
-		}
-
+		Product product = getProduct(id);
 		repository.delete(product);
+	}
+
+	private Product getProduct(final Long id) {
+		return repository.findByIdOptional(id)
+                         .orElseThrow(() -> new IllegalArgumentException("Product not found!"));
 	}
 
 }

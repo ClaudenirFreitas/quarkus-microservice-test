@@ -5,6 +5,9 @@ import com.freitas.microservice_products.models.Product;
 
 public class ProductParser {
 
+	private ProductParser() {
+	}
+
 	public static ProductDTO toDTO(final Product product) {
 		return new ProductDTO(product.getId(), product.getName(), product.getDescription(), product.getPrice());
 	}

@@ -28,7 +28,7 @@ public class ProductResourceIntegrationTest {
 	ProductService service;
 
 	@Test
-	public void testGetSuccess() {
+	void testGetSuccess() {
 		given()
 			.accept(ContentType.JSON)
 		.when()
@@ -40,7 +40,7 @@ public class ProductResourceIntegrationTest {
 	}
 
 	@Test
-	public void testCreateSuccess() {
+	void testCreateSuccess() {
 		
 		ProductDTO product = new ProductDTO();
 		product.setName("test product 1");
@@ -66,7 +66,7 @@ public class ProductResourceIntegrationTest {
 	}
 
 	@Test
-	public void testUpdateSuccess() {
+	void testUpdateSuccess() {
 		
 		ProductDTO product = new ProductDTO();
 		product.setName("update name 1");
@@ -90,7 +90,7 @@ public class ProductResourceIntegrationTest {
 	}
 
 	@Test
-	public void testDeleteSuccess() {
+	void testDeleteSuccess() {
 		
 		ProductDTO product = new ProductDTO();
 		product.setName("test product to delete");
