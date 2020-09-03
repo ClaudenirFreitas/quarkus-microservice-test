@@ -1,5 +1,7 @@
 ![Java CI with Maven](https://github.com/ClaudenirFreitas/quarkus-microservice-test/workflows/Java%20CI%20with%20Maven/badge.svg)
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=quarkus-microservice-test&metric=alert_status)](https://sonarcloud.io/dashboard?id=quarkus-microservice-test)
+
 # quarkus-microservice-test
 
 ## Run application
