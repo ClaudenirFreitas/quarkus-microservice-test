@@ -39,7 +39,7 @@ jobs:
       with:        
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        registry: https://docker.pkg.github.com/
+        registry: https://docker.pkg.github.com/claudenirfreitas/quarkus-microservice-test
         repository: claudenirfreitas  
         name: quarkus-microservice-test
         tag_with_ref: true
