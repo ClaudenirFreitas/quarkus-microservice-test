@@ -16,6 +16,7 @@ local.properties
 .loadpath
 .recommenders
 ObjectStore
+./docker/app.jar
 
 # External tool builders
 .externalToolBuilders/
