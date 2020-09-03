@@ -42,4 +42,5 @@ jobs:
         registry: https://docker.pkg.github.com/
         repository: claudenirfreitas  
         name: quarkus-microservice-test
-
+        tag_with_ref: true
+        tag_with_sha: true 
