@@ -42,7 +42,7 @@ public class ProductServiceTest {
 
         // Given
         Mockito.when(repository.listAll())
-               .thenReturn(Arrays.asList(new Product("IPhone XR")));
+               .thenReturn(Arrays.asList(new Product("IPhone XR 1")));
 
         // When
         List<Product> result = service.findAll();
@@ -50,7 +50,7 @@ public class ProductServiceTest {
         // Then
         verify(repository, times(1)).listAll();
         Assert.assertEquals(1, result.size());
-        Assert.assertEquals("IPhone XR", result.get(0).getName());
+        Assert.assertEquals("IPhone XR 1", result.get(0).getName());
     }
 
 }
