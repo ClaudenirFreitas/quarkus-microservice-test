@@ -24,7 +24,7 @@
 		<jacoco.version>0.8.3</jacoco.version>
 
 		<!-- tests -->
-		<testcontainers.version>1.14.3</testcontainers.version>
+		<testcontainers.version>1.16.2</testcontainers.version>
 		<mockito-core.version>2.28.2</mockito-core.version>
 		<junit.platform.version>1.5.0-RC2</junit.platform.version>
 
